@@ -1,0 +1,16 @@
+<!-- TOOLBAR SECTION -->
+    <md-toolbar>
+      <div class="md-toolbar-tools" layout-align="space-between center">
+        <h2>Stores Dashboard</h2>
+        
+          <md-tabs md-selected="selectedIndex" flex="45" >
+            <md-tab ng-repeat="tab in tabs"  label="{{tab.title}}" >
+            </md-tab>
+          </md-tabs>
+        
+        <md-button class="md-fab" aria-label="Logout">
+          <md-icon icon="img/icons/ic_exit_to_app_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+        </md-button>
+
+      </div>
+    </md-toolbar>
