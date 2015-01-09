@@ -10,9 +10,8 @@
 angular.module('yoStoresDashboardApp')
   .controller('ToolbarController', function ($scope) {
     $scope.tabs = [
-	      { title: 'STORES HIGHLIGHTS', dashboard_filter: "storeshighlights"},
-	      { title: 'FINANCE HIGHLIGHTS', dashboard_filter: "financehighlights"},
-	      { title: 'SHOW ALL', dashboard_filter: ""}
+	      { title: 'STORES HIGHLIGHTS', dashboardFilter: "storeshighlights"},
+	      { title: 'FINANCE HIGHLIGHTS', dashboardFilter: "financehighlights"},
+	      { title: 'SHOW ALL', dashboardFilter: ""}
 	    ];
-
   });

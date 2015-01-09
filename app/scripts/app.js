@@ -15,4 +15,18 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMaterial'
-  ]);
+  ])
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'views/tile_view.html',
+        controller: 'ToolbarController'
+      })
+      //.when('/about', {
+      //  templateUrl: 'views/tile_view.html',
+      //  controller: 'ToolbarController'
+      //})
+      .otherwise({
+        redirectTo: '/'
+      });
+  });
