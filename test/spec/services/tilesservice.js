@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: TilesService', function () {
+describe('Service: Tiles', function () {
 
   // load the service's module
   beforeEach(module('yoStoresDashboardApp'));
 
   // instantiate service
-  var TilesService;
-  beforeEach(inject(function (_TilesService_) {
-    TilesService = _TilesService_;
+  var Tiles;
+  beforeEach(inject(function (_Tiles_) {
+    Tiles = _Tiles_;
   }));
 
   it('should do something', function () {
-    expect(!!TilesService).toBe(true);
+    expect(!!Tiles).toBe(true);
   });
 
 });

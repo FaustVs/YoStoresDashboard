@@ -29,6 +29,12 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-aria/angular-aria.js',
       'bower_components/angular-material/angular-material.js',
+      'bower_components/firebase/firebase.js',
+      'bower_components/angularfire/dist/angularfire.js',
+      'bower_components/highcharts-ng/dist/highcharts-ng.js',
+      'bower_components/bower_components/highcharts/highcharts.js',
+      'bower_components/bower_components/highcharts/highcharts-more.js',
+      'bower_components/bower_components/highcharts/modules/exporting.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
