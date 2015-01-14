@@ -10,8 +10,14 @@
 angular.module('yoStoresDashboardApp')
   .controller('ToolbarController', function ($scope) {
     $scope.tabs = [
-	      { title: 'STORES HIGHLIGHTS', dashboardFilter: "storeshighlights"},
-	      { title: 'FINANCE HIGHLIGHTS', dashboardFilter: "financehighlights"},
-	      { title: 'SHOW ALL', dashboardFilter: ""}
+	      { title: 'STORES HIGHLIGHTS', dashboardFilter: 'storeshighlights'},
+	      { title: 'FINANCE HIGHLIGHTS', dashboardFilter: 'financehighlights'},
+	      { title: 'SHOW ALL', dashboardFilter: ''}
 	    ];
-  });
+  })
+  .controller('TilesController', function ($scope, Tiles) {
+    // Load Tiles from Firebase Service
+	$scope.tiles = Tiles.all;
+
+  })
+  ;

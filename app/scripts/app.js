@@ -14,7 +14,9 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'firebase',
+    'highcharts-ng'
   ])
   .config(function ($routeProvider) {
     $routeProvider

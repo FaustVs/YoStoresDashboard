@@ -1,16 +1,25 @@
 <!-- TOOLBAR SECTION -->
-    <md-toolbar>
-      <div class="md-toolbar-tools" layout-align="space-between center">
-        <h2>Stores Dashboard</h2>
+<md-toolbar>
+  <div class="md-toolbar-tools" layout-align="space-between center">
+    <h2>Stores Dashboard</h2>
         
-          <md-tabs md-selected="selectedIndex" flex="45" >
-            <md-tab ng-repeat="tab in tabs"  label="{{tab.title}}" >
-            </md-tab>
-          </md-tabs>
+    <md-tabs md-selected="selectedIndex" flex="45" >
+      <md-tab ng-repeat="tab in tabs"  label="{{tab.title}}" >
+      </md-tab>
+    </md-tabs>
         
-        <md-button class="md-fab" aria-label="Logout">
-          <md-icon icon="img/icons/ic_exit_to_app_24px.svg" style="width: 24px; height: 24px;"></md-icon>
-        </md-button>
+    <md-button class="md-fab" aria-label="Logout">
+      <md-icon icon="img/icons/ic_exit_to_app_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+    </md-button>
 
-      </div>
-    </md-toolbar>
+  </div>
+</md-toolbar>
+
+
+<!-- TILES SECTION -->
+<md-content class="md-padding" ng-controller="TilesController">
+  <div layout="horizontal" layout-wrap >
+    <md-card ng-repeat="tile in tiles | filter:tabs[selectedIndex].dashboardFilter" ng-include="'views/tiles/' + tile.content_type + '.html'" flex="30" class="md-whiteframe-z2">
+    </md-card>
+  </div>
+</md-content>
